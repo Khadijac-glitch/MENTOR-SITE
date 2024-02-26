@@ -45,12 +45,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function nextImage() {
     currentImg = (currentImg % 4) + 1;
-    thumbMob.src = `./images/image-product-${currentImg}.jpg`;
+    thumbMob.src = `image-product-${currentImg}.jpg`;
   }
 
   function prevImage() {
     currentImg = (currentImg - 2 + 4) % 4 + 1;
-    thumbMob.src = `./images/image-product-${currentImg}.jpg`;
+    thumbMob.src = `image-product-${currentImg}.jpg`;
   }
 
   function toggleCart() {
@@ -71,12 +71,12 @@ document.addEventListener("DOMContentLoaded", function() {
       wrp.classList.remove("empty");
       wrp.innerHTML = `<div class="product">
         <div>
-          <img src="./images/image-product-1-thumbnail.jpg" class="product-img" alt="product">
+          <img src="image-product-1-thumbnail.jpg" class="product-img" alt="product">
           <div class="product-info">
             <p class="product-title">Fall Limited Edition Sneakers</p>
             <p><span>$125.00</span> × <span class="number">${amountValue}</span> <b>$${total}</b></p>
           </div>
-          <button class="delete-btn" onclick="deleteItem()"><img src="./images/icon-delete.svg" alt="delete"></button>
+          <button class="delete-btn" onclick="deleteItem()"><img src="icon-delete.svg" alt="delete"></button>
         </div>
         <button class="checkout-btn">Checkout</button>
       </div>`;
